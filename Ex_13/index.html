@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create User</title>
+</head>
+<body>
+    <h1>Create User</h1>
+    <hr>
+    <form action="">
+        <label for="name">Name: </label>
+        <input type="text" id= "name" name="name" placeholder="Name">
+        <br><br>
+        <label for="heros">Select a hero: </label>
+        <select name="heros" id="heros">
+            <option value="deadpool">Deadpool</option>
+            <option value="batman_vs_superman">Batman VS Superman</option>
+            <option value="civil_war">Civil War</option>
+            <option value="doctor_strange">Doctor Strange</option>
+            <option value="suicide_squad">Suicide Squad</option>
+            <option value="apocalypse">X-MEN: Apocalypse</option>
+            <option value="gotg_vol2">Guardians of the Galaxy Vol 2</option>
+            <option value="Justice League">Justice Leagure</option>
+            <option value="logan">Logan</option>
+            <option value="homecoming">Spider-Man: Homecoming</option>
+            <option value="wonder_woman" selected>Wonder Woman</option>
+            <option value="thor_ragnarok">Thor: Ragnarok</option>
+            <option value="black_panther">Black Panther</option>
+        </select>
+        <br><br>
+        <label for="bio">Write a brief bio about this super hero: </label>
+        <br>
+        <textarea name="bio" id="bio" placeholder="Write a bio here ..." cols="30" rows="10"></textarea>  
+        <br><br>
+        <label for="">Upload an avatar image: </label>
+        <input type="file" name="filename" multiple>
+        <br><br>
+        <button name="clear" type="button">Clear</button>
+        <br><br>
+        <button type="button" name="create_user">Create new User</button>
+    </form>
+</body>
+</html>
