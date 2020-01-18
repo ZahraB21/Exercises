@@ -8,57 +8,63 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Kids Book</title>
   </head>
   <body>
-    <header>
-        <nav class="navbar navbar-light bg-light justify-content-around">
-            <a class="navbar-brand" href="index.html">
-                <img src="/Ex_15/images/logo.png" alt="Kids Books" width="150" height="100">
-            </a>
-            <a class="nav-link text-uppercase text-danger font-weight-bold border-right border-left border-danger" 
-            href="index.html">Home</a>
-            <a class="nav-link text-uppercase text-warning font-weight-bold border-right border-left border-warning" 
-            href="#books">Books</a>
-            <a class="nav-link text-uppercase text-success font-weight-bold border-right border-left border-success" 
-            href="#gallery">Gallery</a>
-            <a class="nav-link text-uppercase text-primary font-weight-bold border-right border-left border-primary" 
-            href="#about">About</a>
-            <a class="nav-link text-uppercase text-dark font-weight-bold border-right border-left border-dark" 
-            href="#contact">Contact</a>
-        </nav>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/Ex_15/images/carousel-1.jpg" class="d-block w-100" alt="...">
+    <header class="text-center mr-auto left-auto p-0">
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-light bg-light justify-content-around">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/Ex_15/images/logo.png" alt="Kids Books" width="150" height="100">
+                  </a>
+                  <a class="nav-link text-uppercase text-danger font-weight-bold border-right border-left border-danger" 
+                  href="index.html">Home</a>
+                  <a class="nav-link text-uppercase text-primary font-weight-bold border-right border-left border-primary" 
+                  href="#about">About</a>
+                  <a class="nav-link text-uppercase text-warning font-weight-bold border-right border-left border-warning" 
+                  href="#books">Books</a> 
+                  <a class="nav-link text-uppercase text-success font-weight-bold border-right border-left border-success" 
+                  href="#gallery">Gallery</a>
+                <a class="nav-link text-uppercase text-dark font-weight-bold border-right border-left border-dark" 
+                href="#contact">Contact</a>
+            </nav>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/Ex_15/images/carousel-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/Ex_15/images/carousel-33.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/Ex_15/images/carousel-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <div class="carousel-item">
-                <img src="/Ex_15/images/carousel-33.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/Ex_15/images/carousel-2.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
+        </div>
+      </div>
     </header>
     <main class="m-3">
         <section id="about">
             <div class="container ml-auto mr-auto">
                 <div class="row justify-content-center">
-                    <h1>About</h1>
+                    <h1 class="text-primary">About</h1>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-8">
@@ -86,40 +92,126 @@
         <section id="books" class="mt-5 ">
             <div class="container ml-auto mr-auto">
                 <div class="row justify-content-center">
-                    <h1>Books</h1>
+                    <h1 class="text-warning">Books</h1>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-4">
+                <div class="row mt-3">
+                  <div class="col-xs-12 col-sm-12 col-md-4">
                         <div class="card" style="width: 18rem;">
                             <img src="/Ex_15/images/pictureBooks.png" class="card-img-top" alt="Picture books">
                             <div class="card-body">
                               <h5 class="card-title text-center">Picture Books</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">Developing a love of the written word can begin while your child is an infant. Babies who are 
+                                read to are much more likely to read earlier, understand concepts better, and be faster learners than babies who 
+                                do not have the chance to experience books. Start reading to your child today.
+                              </p>
+                              <div class="text-center">
+                                <a href="https://www.commonsensemedia.org/lists/50-books-all-kids-should-read-before-theyre-12" class="btn 
+                                btn-primary">
+                                  Learn More</a>
+                              </div>
                             </div>
                           </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <div class="card" style="width: 18rem;">
                             <img src="/Ex_15/images/fiction.png" class="card-img-top" alt="Fiction">
                             <div class="card-body">
                               <h5 class="card-title text-center">Fiction</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">From graphic novels, fantasy to family fun, these must-read books have the power
+                                 to hook both boys and girls. Some are cultural touchstones that belong in every kid's library. Others open kids' 
+                                 minds to cultures beyond their own, even the classic and modern fictional books.
+                              </p>
+                              <div class="text-center">
+                                <a href="https://www.commonsensemedia.org/lists/50-books-all-kids-should-read-before-theyre-12" class="btn btn-danger">
+                                Learn More</a>
+                              </div>
                             </div>
                           </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                         <div class="card" style="width: 18rem;">
                             <img src="/Ex_15/images/non-fiction3.png" class="card-img-top" alt="Non-fiction">
                             <div class="card-body">
                               <h5 class="card-title text-center">Non-Fiction</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">Some kids prefer true stories -- history, biography, memoir, science -- to made-up ones. 
+                                For kids who'd rather read about how to code, space exploration, the layers of rock and vegetation in the Grand Canyon, or Alexander Hamilton than pick up a non-fiction novel.</p>
+                              <div class="text-center">
+                                <a href="https://www.commonsensemedia.org/lists/best-nonfiction-books-for-kids" class="btn btn-success">
+                                Learn More</a>
+                              </div>
                             </div>
                           </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="mt-5" id="gallery">
+          <h1 class="text-center text-success mb-5">Gallery</h1>
+          <h2 class="text-center mb-5 text-info">Below you can find children reading book in their leisure time.</h2>
+          <div class="container-fluid ml-auto mr-auto ">
+            <div class="row justify-content-center">
+              <div class="col-xs-12 col-sm-12 col-md-4">
+                <img src="/Ex_15/images/g1.jpg" class="img-fluid rounded float-left" alt="Responsive image" >
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4">
+                <img src="/Ex_15/images/g2.jpg" class="img-fluid rounded float-right" alt="Responsive image">
+              </div>
+            </div>
+            <div class="row mt-3 justify-content-center">
+              <div class="col-xs-12 col-sm-12 col-md-8">
+                <img src="/Ex_15/images/g3.jpg" class="img-fluid rounded float left" alt="Responsive image">
+                <a class="btn btn-info btn-block mt-2" href="https://www.google.com/search?q=children+reading+books&sxsrf=
+                ACYBGNTglbUE0i6Q2mEwnkbK9E5vpx9iYg:1579311593189&source=lnms&tbm=isch&sa=X&ved=2ahUKEwivqYGUgoznAh
+                X4IDQIHapfAJkQ_AUoAXoECA8QAw&biw=1440&bih=769">View More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="mt-5">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-8">
+                <h1 class="mt-3 text-center">Contact Us</h1>
+                <form action="" method="post" enctype="multipart/form-data">
+                  <div class="row mt-3" >
+                      <div class="col-6">
+                          <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" name="name" id="name">
+                          </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address:</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="row justify-content-center">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Please provide a detailed message:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-block btn-success">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
+    <footer class="mastfoot mt-5">
+      <div class="inner">
+        <p class="text-center">@ Copyright 2020 | Designed and developed by Zahra Behfarshad</p>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
