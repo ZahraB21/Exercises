@@ -1,4 +1,5 @@
 # Exercises
 
-The exercises of the HTML section of the Node course are placed here. 
-Each exercise is either a single file or is a folder with an index referring to that specific exercise. 
+The exercises of the of the Node course are placed here. 
+
+The exercises regarding HTML and CSS are placed in the HTML and CSS folder respectively.
