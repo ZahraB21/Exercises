@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    background: gray;
+    width: 600px;
+    margin: auto;
+}
+
+#container a{
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#container a:hover{
+    background: #eee;
+    color: gray;
+}
+
+/* Add a style element
+Select the body element and apply the following styles:
+Use Arial, Helvetica, sans-serif as font family
+Select the element with the container id and apply the following styles:
+Background color must be gray
+The element must be 600px wide
+Center this element using margin auto
+Select all the link element that are children of the container id element and apply the following styles:
+Change the display property to be block
+Center align the text
+Use white for font color
+Remove the link text decoration
+Add a 1px solid black bottom border
+Add 10px padding to all sides
+Transform the text to be uppercase
+Add the hover pseudoclass and apply the following styles:
+Background color must be #eee
+Use gray for font color */
