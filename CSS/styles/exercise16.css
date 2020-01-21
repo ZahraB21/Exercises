@@ -1,0 +1,37 @@
+ol, ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li{
+    list-style-position: inside;
+}
+
+ol li {
+    list-style-type: decimal-leading-zero;
+}
+
+ul li{
+    list-style-type: square;
+}
+
+.decorated{
+    list-style-image: url(/images/snow.png);
+    font-size: 30px;
+}
+
+/* Add a style element
+Select the both ul and ol lists and apply the following style:
+Remove margin from all sides
+Remove padding from all sides
+Add 20px to margin top only
+Select all li elements and apply the following style:
+The list item style position must be inside
+Select only the ol list and apply the following style:
+List style must be decimal-leading-zero
+Select only the ul list and apply the following style:
+List style must be square
+Select the element with the decorated class and apply the following style:
+Use the snow.png as list style image
+Font size must be 30px */
