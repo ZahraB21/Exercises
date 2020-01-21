@@ -1,0 +1,44 @@
+body{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+div, span{
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+div{
+    border-color: red;
+}
+
+span{
+    border-color: orange;
+}
+
+
+.box{
+    width: 300px;
+    height: 100px;
+}
+
+.min{
+    min-width: 100px;
+    min-height: 10px;
+}
+
+.max{
+    max-width: 200px;
+    max-height: 40px;
+}
+
+.center{
+    width: 300px;
+    margin: auto;
+}
+
+.inline-center{
+    text-align: center;
+}
