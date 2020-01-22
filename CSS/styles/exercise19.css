@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    background: #eee;
+    padding: 10px 5px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+input[type="text"], input[type="password"], button{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, button:focus{
+    border: 1px solid #ec576b;
+    box-shadow: 0 6px 6px -6px #777;
+}
+
+button{
+    background: #ec576b;
+    color: white;
+}
+
+button:hover{
+    background: rgb(240,50,76);
+    color: white;
+    cursor: pointer;
+}
