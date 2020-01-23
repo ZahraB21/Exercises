@@ -1,0 +1,61 @@
+body{
+    padding: 0 20px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    color: #f47933;
+}
+
+p{
+    text-align: justify;
+}
+
+img{
+    border: 2px solid transparent;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.html{
+    box-shadow: 0 3px 2px #f47933;
+    border-color: #f47933;;
+}
+
+.css{
+    border-color: #008fd5;
+    box-shadow: 0 3px 2px #008fd5;
+}
+
+.js{
+    border-color: #f99d34;
+    box-shadow: 0 3px 2px #f99d34;
+}
+/* Select the body element and apply the following style:
+Remove top and bottom padding and add 20px to left and right sides
+Remove margins from all sides
+
+Select the img element that has the left class and apply the following styles:
+Element must float to the left
+Select the img element that has the right class and apply the following styles:
+Element must float to the right
+Select the elements with the html class and apply the following styles:
+Border color must be #f47933
+Use 0 3px 2px #f47933 as box shadow
+Select the elements with the css class and apply the following styles:
+Border color must be #008fd5
+Use 0 3px 2px #008fd5 as box shadow
+Select the elements with the js class and apply the following styles:
+Border color must be #f99d34
+Use 0 3px 2px #f99d34 as box shadow */
