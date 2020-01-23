@@ -1,0 +1,107 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    background: #ddd;
+    border: 1px solid gray;
+}
+
+header{
+    padding: 20px;
+    color: #eee;
+}
+
+header, footer{
+    background-color: gray;
+}
+
+.side{
+    float: left;
+    width: 150px;
+}
+
+.side ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+.side ul li a{
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid gray;
+}
+
+.side ul li a:hover{
+    color: #eee;
+    background: gray;
+}
+
+.main{
+    margin-left: 150px;
+    background: #eee;
+    padding: 20px;
+}
+
+.main h1{
+    margin-top: 0;
+}
+
+.main p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+footer{
+    clear: both;
+    color: #eee;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .love{
+    color: pink;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    .side{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .side ul li{
+        display: inline-block;;
+    }    
+
+    .side ul li a{
+        border-bottom: 0;
+        padding: 10px;
+    }
+
+    .main{
+        margin-left: 0;
+    }
+
+    .main p{
+        text-align: center;
+    }
+  }
