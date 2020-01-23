@@ -1,0 +1,80 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    background: #ddd;
+    border: 1px solid gray;
+}
+
+header{
+    padding: 20px;
+    color: #eee;
+}
+
+header, footer{
+    background-color: gray;
+}
+
+.side{
+    float: left;
+    width: 150px;
+}
+
+.side ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+.side ul li a{
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid gray;
+}
+
+.side ul li a:hover{
+    color: #eee;
+    background: gray;
+}
+
+.main{
+    margin-left: 150px;
+    background: #eee;
+    padding: 20px;
+}
+
+.main h1{
+    margin-top: 0;
+}
+
+.main p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+footer{
+    clear: both;
+    color: #eee;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .love{
+    color: pink;
+}
+
+/* Select the html & body elements and apply the following style:
+
+Center align the text using text align property
+Add 10px padding to top and bottom sides and remove left and right one
+Select the element with the class love that is children of the footer element and apply the following style:
+Text color must be pink */
