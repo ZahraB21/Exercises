@@ -13,9 +13,6 @@ const print = (array, index) => {
     }
 }
 
-// console.log(`-------Even Array Outputs:-------\n${print(evenArray, 20)}`);
-// console.log(`-------Odd Array Outputs:-------\n${print(oddArray.reverse(), 10)}`);
-
 console.log(`--- Even Array Output ---`);
 print(evenArray, 20);
 
