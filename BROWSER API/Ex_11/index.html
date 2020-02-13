@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let username = prompt('Enter username');
+        let password = prompt('Enter password');
+        alert(`Welcome ${username}`);
+        setTimeout(() => {
+            if (confirm(`Do you still want to be logged in?`)) {
+                alert(`${username} your session has been restored`);
+            } else {
+                alert(`${username} your session has expired`);
+            }
+        }, 10000);
+    </script>
+</head>
+
+<body>
+    <h1>Exercise 11</h1>
+</body>
+
+</html>
