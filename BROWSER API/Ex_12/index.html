@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let counter = 0;
+        setInterval(() => {
+            document.querySelector('#content').innerHTML = `<p>${++counter} seconds have passed since you opened this tab</p>`;
+        },1000);
+    </script>
+</head>
+
+<body>
+    <h1>Exercise 12</h1>
+    <div id="content"></div>
+</body>
+
+</html>
+
