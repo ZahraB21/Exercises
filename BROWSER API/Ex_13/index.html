@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let counter = +prompt('How many seconds do you want to stay here?');
+        let i = 0;
+        setInterval(() => {
+            if(counter > 0)
+                document.querySelector('#content').innerHTML = `<p>${++i} seconds have passed since you opened this tab</p><p>Remaining time" ${--counter}`;
+            else
+                alert(`Your session has expired. Come back soon`);
+        },1000);
+    </script>
+</head>
+
+<body>
+    <h1>Exercise 13</h1>
+    <div id="content"></div>
+</body>
+
+</html>
+
