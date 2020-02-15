@@ -8,12 +8,13 @@
     <script>
         let counter = +prompt('How many seconds do you want to stay here?');
         let i = 0;
-        setInterval(() => {
+        let id = setInterval(() => {
             if(counter > 0)
                 document.querySelector('#content').innerHTML = `<p>${++i} seconds have passed since you opened this tab</p><p>Remaining time" ${--counter}`;
             else
                 alert(`Your session has expired. Come back soon`);
         },1000);
+        clearInterval(id);
     </script>
 </head>
 
