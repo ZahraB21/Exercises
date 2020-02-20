@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Setting attributes</title>
+    <style>
+      .bold {
+        font-weight: bold;
+      }
+
+      .striked {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main">Playing with attributes</h1>
+    <div name="divy">
+      We have more control over our documents as we learn about JavaScript and
+      DOM elements!!!
+    </div>
+    <script type="text/JavaScript">
+      const strikeThrough = element => {
+              debugger;
+              if (element.hasAttributes()) element.classList.add("striked");
+              else element.classList.add("bold");
+            };
+            let header = document.querySelector('h1');
+            let divv = document.querySelector("div");
+            strikeThrough(header);
+            strikeThrough(divv);
+            divv.removeAttribute("name");
+    </script>
+  </body>
+</html>
