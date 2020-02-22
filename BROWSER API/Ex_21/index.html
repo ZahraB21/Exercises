@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Elements</title>
+    <style>
+      .red {
+        color: red;
+      }
+
+      .green {
+        color: green;
+      }
+
+      .orange {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercise 21</h1>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+    <script>
+      let firstListElement = document.querySelector("ul").children[0];
+      firstListElement.classList.add("orange");
+      while (firstListElement.nextElementSibling !== null) {
+        element = firstListElement.nextElementSibling;
+        element.classList.add("orange");
+        firstListElement = element;
+      }
+      console.log(firstListElement.innerText);
+      let previousElement = firstListElement.previousElementSibling;
+      previousElement = previousElement.previousElementSibling;
+      previousElement.classList.replace("orange", "red");
+      previousElement =
+        previousElement.previousElementSibling.previousElementSibling;
+      previousElement.classList.replace("orange", "green");
+    </script>
+  </body>
+</html>
+Now we need to go back using previousElementSibling Add red class to Item 3 Add
+green class to Item 1
