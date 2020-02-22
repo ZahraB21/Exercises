@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Texts</title>
+  </head>
+  <body>
+    <h1>Main Title</h1>
+    <p>This is a paragraph</p>
+    <script>
+      let h1_element = document.querySelector("h1").innerText;
+      let p_element = document.querySelector("p").textContent;
+      document.querySelector("p").innerText = h1_element;
+      document.querySelector("h1").innerText = p_element;
+    </script>
+  </body>
+</html>
