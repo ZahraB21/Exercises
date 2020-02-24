@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+  </head>
+  <body>
+    <button id="firstButton">Click Me!!</button>
+    <button id="secondButton">Remove event listener</button>
+    <script>
+      let greeting = () => alert("hello");
+      document
+        .getElementById("firstButton")
+        .addEventListener("click", greeting);
+      document
+        .getElementById("secondButton")
+        .addEventListener("click", () =>
+          document
+            .getElementById("firstButton")
+            .removeEventListener("click", greeting)
+        );
+    </script>
+  </body>
+</html>
