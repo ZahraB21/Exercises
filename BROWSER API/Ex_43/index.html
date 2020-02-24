@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Properties</title>
+  </head>
+  <body>
+    <form
+      action="save_user.html"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
+      name="login"
+    >
+      <input type="text" id="username" name="username" />
+      <input type="password" id="pass" name="pass" />
+      <input type="submit" name="submit" value="Send" />
+    </form>
+    <div></div>
+    <script>
+      let form = document.querySelector("form");
+      let div = document.querySelector("div");
+      div.innerHTML += "<p>Action: " + form.action + "</p>";
+      div.innerHTML += "<p>Method: " + form.method + "</p>";
+      div.innerHTML += "<p>Enctype: " + form.enctype + "</p>";
+      div.innerHTML += "<p>Name: " + form.name + "</p>";
+      div.innerHTML +=
+        "<p>First child: " + form.children.item(0).type.toUpperCase() + "</p>";
+      div.innerHTML +=
+        "<p>Second Child: " + form.children.item(1).type.toUpperCase() + "</p>";
+      div.innerHTML +=
+        "<p>Third Child: " + form.children.item(2).type.toUpperCase() + "</p>";
+    </script>
+  </body>
+</html>
