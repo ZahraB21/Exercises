@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>It's all JavaScript Baby!!</title>
+  </head>
+  <body>
+    <script>
+      let ol = document.createElement("ol");
+      let names = [];
+      let name = "";
+      do {
+        name = prompt("Enter a name");
+        let li = document.createElement("li");
+        li.innerText = name;
+        names.push(name);
+        if (names.length % 2 == 0) {
+          li.style.color = "blue";
+        } else {
+          li.style.color = "red";
+        }
+        ol.appendChild(li);
+        document.body.appendChild(ol);
+      } while (!confirm("Would you like to exit?"));
+    </script>
+  </body>
+</html>
