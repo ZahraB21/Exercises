@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Checkbox</title>
+  </head>
+  <body>
+    <form
+      action="save_user.html"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
+      name="login"
+    >
+      <input type="checkbox" name="superheroe" value="Wolverine" /> Wolverine
+      <input type="checkbox" name="superheroe" value="The Invisible Woman" />
+      The Invisible Woman
+      <input type="checkbox" name="superheroe" value="Iron Man" /> Iron Man
+      <input type="checkbox" name="superheroe" value="Superman" /> Superman
+      <input type="checkbox" name="superheroe" value="Daredevil" /> Daredevil
+      <input type="checkbox" name="superheroe" value="The Flash" /> The Flash
+      <input type="checkbox" name="superheroe" value="Captain America" />
+      Captain America
+      <input type="checkbox" name="superheroe" value="Wonder Woman" /> Wonder
+      Woman
+      <input type="checkbox" name="superheroe" value="Spider-Man" /> Spider-Man
+      <input type="checkbox" name="superheroe" value="Batman" /> Batman
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+    <script>
+      let form = document.querySelector("form");
+      let superheroList = [];
+      let item = "";
+      form.addEventListener("submit", event => {
+        event.preventDefault();
+        for (let i = 0; i < form.children.length; i++) {
+          item = form.children.item(i);
+          if (item.checked) {
+            superheroList.push(item.value);
+          }
+        }
+        if (!superheroList.length) {
+          alert("You must select atleast 1 superhero");
+        } else {
+          alert(`The best super hero(s) are: ${superheroList}`);
+        }
+      });
+    </script>
+  </body>
+</html>
