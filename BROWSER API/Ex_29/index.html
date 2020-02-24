@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Products</title>
+  </head>
+  <body>
+    <ul>
+      <li>Bannana</li>
+      <li>Apple</li>
+      <li>Peach</li>
+      <li>Eggs</li>
+      <li>Tomatto</li>
+      <li>Lettuce</li>
+      <li>Milk</li>
+    </ul>
+    <script>
+      let ul = document.querySelector("ul");
+      let items = [];
+      let item = "";
+      for (let i = ul.children.length - 1; i >= 0; i--) {
+        item = ul.children.item(i);
+        items.push(item);
+        ul.removeChild(item);
+      }
+    </script>
+  </body>
+</html>
