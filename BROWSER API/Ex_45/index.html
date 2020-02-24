@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Properties</title>
+  </head>
+  <body>
+    <form
+      action="save_user.html"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
+      name="login"
+    >
+      <input type="text" id="username" name="username" />
+      <input type="password" id="pass" name="pass" />
+      <input type="submit" name="submit" value="Send" />
+    </form>
+    <div></div>
+    <script>
+      let form = document.querySelector("form");
+      let username = "morty";
+      let password = 12345;
+      form.elements[0].value = username;
+      form.elements[1].value = password;
+      form.addEventListener("submit", event => {
+        alert("Preventing default action.");
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>
