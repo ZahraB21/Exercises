@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+  </head>
+  <body>
+    <div></div>
+    <button id="firstbutton">Click me!!</button>
+    <script>
+      let button = document.getElementById("firstbutton");
+      let handleOnClick = () => alert("Ouch ... Don't click me!!");
+      button.onclick = handleOnClick;
+    </script>
+  </body>
+</html>
