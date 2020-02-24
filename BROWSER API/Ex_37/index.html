@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+  </head>
+  <body>
+    <div></div>
+    <button id="firstButton">Click Me!!</button>
+    <button id="secondButton">Remove event listener</button>
+    <a href="https://google.com">Link with JavaScript handler</a>
+    <script>
+      document.querySelector("body").addEventListener("keypress", event => {
+        let key = event.charCode;
+        let char = String.fromCharCode(key);
+        console.log(char);
+      });
+    </script>
+  </body>
+</html>
