@@ -3,6 +3,6 @@ const greet = (firstName, lastName, func) => {
   func();
 };
 
-module.exports = {
+module.exports = 
   greet
-};
+;
